@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Saira+Condensed:wght@100&display=swap"
+      rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../website/font_icon/fontawesome-free-5.15.4-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="mydata2()">
+    <div class="container-fluid px-0 " >
+
+        <!-- Header start -->
+        <header>
+      
+          <div class="row head-main navbar navbar-expand-sm navbar-light headmain m-0">
+      
+            <div class="col-3 text-center header-stat px-0 py-4"><img src="./images_all/logo.webp"></div>
+      
+            <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse"
+              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon "></span>
+            </button>
+      
+            <div class="col-sm-6 text-dark px-0 ">
+      
+              <div class="bg-white py-2 infonum">
+                <span class="mx-4 text-secondary">
+                  <i class="fas fa-envelope text-warning mx-1"></i>
+                  info@example.com</span>
+      
+                <span class="text-secondary">
+                  <i class="fas fa-phone-alt text-warning mx-1"></i>
+                  +012 345 6789</span>
+              </div>
+      
+              <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mb-0 py-2">
+                  
+                  <li class="nav-item ">
+                    <a class="nav-link text-white" href="#">HOME <i class="fas fa-chevron-down fa-xs"></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">SHOP PAGE
+                      <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white bg-warning" href="#" >SINGLE PRODUCT
+                      <i class="fas fa-chevron-down fa-sm"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">CART
+                      <i class="fas fa-chevron-down fa-xs"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">CHECKOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">OTHER</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">CONTACT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./Login_shop.html">LOGIN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./Registration_shop.html">REGISTRATION</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      
+            <div class="col-sm-3 px-0 text-center">
+              <div class="bg-white text infonum header-icon">
+                <i class="fab fa-facebook-f text-warning"></i>
+                <i class="fab fa-twitter text-warning"></i>
+                <i class="fab fa-instagram-square text-warning"></i>
+                <i class="fab fa-youtube text-warning"></i>
+                <i class="fab fa-whatsapp-square  text-warning"></i>
+              </div>
+      
+              <div class="bg-warning text-center py-3 infonum">
+                PURCHASE NOW
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- singal item desc start -->
+        <div>
+            <span><a href="#">Home</a></span>
+            <span><a href="#">Category Name</a></span>
+            <span><a href="#">sony smart</a></span>
+        </div>
+        <div class="container" >
+            <div class="row" id="row2">
+              
+            </div>
+            
+        </div>
+        <!-- singal item desc end -->
+
+        <script>
+           var producthtml2='';
+          function mydata2(){
+        //  document.getElementById("result").innerHTML=localStorage.getItem("dataAll");
+
+         var abcd= localStorage.getItem("dataAll");
+         console.log(typeof abcd);
+         var datahome = JSON.parse(abcd);
+         console.log(typeof datahome);
+         display(datahome);
+        //  viewoneproduct(datahome);
+          }
+
+          // function viewoneproduct(datahome){
+          //   var xyza= localStorage.getItem("clickproduct");
+          //   console.log(xyza);
+          //   console.log(datahome);
+          //   let res = datahome.find((item) =>{
+          //     return item.id == xyza;
+          //   });
+
+          //   console.log(res);
+          //   document.getElementById("home2id").innerHTML=res["description"];
+          // }
+
+          function display(datahome){
+            var xyza= localStorage.getItem("clickproduct");
+            console.log(xyza);
+            
+            let res = datahome.find((item) =>{
+              return item.id == xyza;
+            });
+            console.log(datahome);
+            console.log(typeof datahome );
+            console.log(res);
+            console.log(typeof res);
+
+
+            // var selectedData =[res];
+            // console.log(selectedData);
+
+            // for (const elements in res) {
+            //   console.log(res);
+            //   console.log(elements["title"]);
+              
+            
+            //selectedData.forEach(elements => {
+             var str2 =`  <div class="col-md-6 text-center p-5">
+                    <img class="border border-warning img-home2 rounded " src="${res.image}" >
+                </div>
+                <div class="col-md-6">
+                    <h1> ${res.title}</h1>
+                    <h2> <i class="fa-solid fa-dollar-sign"></i>  ${res.price}</h2>
+   
+         
+                    <input type="text" id="pin" name="pin" value="1" maxlength="4" size="4">
+                    <button class="btn btn-warning">Add to cart</button>
+
+                    
+                    <span>Category:</span>
+                    <sapn><u><b>${res.category}</b></u></sapn>
+                </br></br>
+                <button class="btn btn-warning"> Rating</button>
+                <span><b>${res.rating.rate}<b></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                </br></br>
+                    <button class="btn btn-warning"> Description</button>
+                    <p>${res.description}</p>
+
+                </div>`
+              
+              producthtml2 += str2;
+           //  });
+            
+            document.getElementById("row2").innerHTML=producthtml2;
+          }
+         
+       
+        </script>
+</body>
+</html>

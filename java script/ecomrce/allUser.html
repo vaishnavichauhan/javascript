@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALLUSER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Saira+Condensed:wght@100&display=swap"
+    rel="stylesheet">
+  <!-- <link rel="stylesheet" href="../website/font_icon/fontawesome-free-5.15.4-web/css/all.min.css"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <script>var __basePath = './';</script>
+  <script src="https://unpkg.com/ag-grid-community@27.1.0/dist/ag-grid-community.min.js">
+  </script>
+  <script src="main.js">
+  </script>
+<script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+<link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css">
+
+  <style media="only screen">
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    html {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0;
+        overflow: auto;
+    }
+
+    body {
+        padding: 1rem;
+        overflow: auto;
+    }
+</style>
+</head>
+
+<body>
+  <div class="container-fluid px-0 ">
+
+    <!-- Header start -->
+    <header>
+
+      <div class="row head-main navbar navbar-expand-sm navbar-light headmain m-0">
+
+        <div class="col-3 text-center header-stat px-0 py-4"><img src="./images_all/logo.webp"></div>
+
+        <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+
+        <div class="col-sm-6 text-dark px-0 ">
+
+          <div class="bg-white py-2 infonum">
+            <span class="mx-4 text-secondary">
+              <i class="fas fa-envelope text-warning mx-1"></i>
+              info@example.com</span>
+
+            <span class="text-secondary">
+              <i class="fas fa-phone-alt text-warning mx-1"></i>
+              +012 345 6789</span>
+          </div>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mb-0 py-2">
+
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="#">HOME <i class="fas fa-chevron-down fa-xs"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">MENS
+                  <i class="fas fa-chevron-down fa-xs"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">WOMENS
+                  <i class="fas fa-chevron-down fa-sm"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">SHOP
+                  <i class="fas fa-chevron-down fa-xs"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">PAGES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">CONTACT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./Login_shop.html">LOGIN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="./Registration_shop.html">REGISTRATION</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-sm-3 px-0 text-center">
+          <div class="bg-white text infonum header-icon">
+            <i class="fab fa-facebook-f text-warning"></i>
+            <i class="fab fa-twitter text-warning"></i>
+            <i class="fab fa-instagram-square text-warning"></i>
+            <i class="fab fa-youtube text-warning"></i>
+            <i class="fab fa-whatsapp-square  text-warning"></i>
+          </div>
+
+          <div class="bg-warning text-center py-3 infonum">
+            PURCHASE NOW
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header end -->
+    <!-- innerpage start -->
+
+    <section class="innerpage bg-warning">
+      <h2>ALLUSER _AG-GRID</h2>
+    </section>
+    <!-- innerpage end -->
+
+
+    <!-- alluser data dispaly start -->
+    <div id="myGrid" style="height: 500px; width:auto" class="ag-theme-alpine-dark"></div>
+    <!-- alluser data dispaly  end  -->
+    <!-- footer stat -->
+    <footer class="container-fluid footer py-5  ">
+
+
+
+      <div class="row">
+        <div class="col-sm-1 "></div>
+        <div class="col-sm-3 text-white bg-warning my-5  ">
+          <img class=" p-2 " src="./images_all/logo.webp">
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima animi enim perspiciatis tempore neque
+            maiores dicta quibusdam itaque ab fuga.</p>
+        </div>
+
+        <div class="col-sm-2 my-5 px-4">
+          <h4 class="text-warning">CONTACT----</h4>
+          <ul class="text-white footer-service p-0">
+            <li><i class="fas fa-map-marker-alt mx-1"></i>123 Street, New York, USA</li>
+            <li><i class="fas fa-phone-alt mx-1"></i>+012 345 67890</li>
+            <li><i class="fas fa-envelope-square mx-1"></i>info@example.com</li>
+
+
+          </ul>
+        </div>
+        <div class="col-sm-2 my-5 px-4">
+          <h4 class="text-warning">COMPANY----</h4>
+          <ul class="text-white footer-service p-0">
+            <li><i class="fas fa-chevron-right mx-1"></i>About Us</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>Contact Us</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>Privacy Policy</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>Terms & Conditon</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>Support</li>
+
+          </ul>
+        </div>
+
+        <div class="col-sm-3 my-5 px-4">
+          <h4 class="text-warning">SERVICE----</h4>
+          <ul class="text-white footer-service p-0">
+            <li><i class="fas fa-chevron-right mx-1"></i>Food & Restaurant</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>Spa & Fitness</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>Sports & Gaming</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>Event & Party</li>
+            <li><i class="fas fa-chevron-right mx-1"></i>GYM & Yoga</li>
+
+          </ul>
+        </div>
+
+
+      </div>
+      <div class="col-sm-1 "></div>
+    </footer>
+    <!-- footer end -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" charset="utf-8">
+    var filterParams = {
+      comparator: function (filterLocalDateAtMidnight, cellValue) {
+        var dateAsString = cellValue;
+        if (dateAsString == null) return -1;
+        var dateParts = dateAsString.split('/');
+        var cellDate = new Date(
+          Number(dateParts[2]),
+          Number(dateParts[1]) - 1,
+          Number(dateParts[0])
+        );
+    
+        if (filterLocalDateAtMidnight.getTime() === cellDate.getTime()) {
+          return 0;
+        }
+    
+        if (cellDate < filterLocalDateAtMidnight) {
+          return -1;
+        }
+    
+        if (cellDate > filterLocalDateAtMidnight) {
+          return 1;
+        }
+      },
+      browserDatePicker: true,
+    };
+        const columnDefs = [
+            {headerName: 'ID', field: 'id',filter:"agNumberColumnFilter"},
+            {headerName: 'FIRSTNAME', field: 'name.firstname', filter: 'agTextColumnFilter'},
+            {headerName: 'LASTNAME', field: 'name.lastname', filter: 'agTextColumnFilter'},
+            {headerName: 'USERNAME', field: 'username', filter: 'agTextColumnFilter'},
+            {headerName: 'EMAIL', field: 'email', filter: 'agTextColumnFilter'},
+            {headerName: 'PASSWORD', field: 'password', filter: 'agTextColumnFilter'},
+            {headerName: 'PHONE', field: 'phone',filter:"agNumberColumnFilter"}
+        ];
+        
+        const gridOptions = {
+            columnDefs: columnDefs,
+            enableSorting: true,
+            enableFilter: true,
+            columnHoverHighlight: true,
+        };
+        const eGridDiv = document.querySelector('#myGrid');
+        new agGrid.Grid(eGridDiv, gridOptions);
+        fetch('https://fakestoreapi.com/users').then(function (response) {
+            return response.json();
+        }).then(function (data) {
+            gridOptions.api.setRowData(data);
+        })
+    
+  </script>
+
+
+</body>
+
+</html>

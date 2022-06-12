@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ecomrchome1</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Saira+Condensed:wght@100&display=swap"
+          rel="stylesheet">
+        <!-- <link rel="stylesheet" href="../website/font_icon/fontawesome-free-5.15.4-web/css/all.min.css"> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./style.css">
+      </head>
+<body onload="mydata()">
+  <div class="container-fluid px-0 " >
+
+  <!-- Header start -->
+  <header>
+
+    <div class="row head-main navbar navbar-expand-sm navbar-light headmain m-0">
+
+      <div class="col-3 text-center header-stat px-0 py-4"><img src="./images_all/logo.webp"></div>
+
+      <button class="navbar-toggler bg-warning" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+
+      <div class="col-sm-6 text-dark px-0 ">
+
+        <div class="bg-white py-2 infonum">
+          <span class="mx-4 text-secondary">
+            <i class="fas fa-envelope text-warning mx-1"></i>
+            info@example.com</span>
+
+          <span class="text-secondary">
+            <i class="fas fa-phone-alt text-warning mx-1"></i>
+            +012 345 6789</span>
+        </div>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav mb-0 py-2">
+            
+            <li class="nav-item ">
+              <a class="nav-link text-white" href="#">HOME <i class="fas fa-chevron-down fa-xs"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">MENS
+                <i class="fas fa-chevron-down fa-xs"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">WOMENS
+                <i class="fas fa-chevron-down fa-sm"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">SHOP
+                <i class="fas fa-chevron-down fa-xs"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">BLOG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">PAGES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">CONTACT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./Login_shop.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="./Registration_shop.html">registration</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-3 px-0 text-center">
+        <div class="bg-white text infonum header-icon">
+          <i class="fab fa-facebook-f text-warning"></i>
+          <i class="fab fa-twitter text-warning"></i>
+          <i class="fab fa-instagram-square text-warning"></i>
+          <i class="fab fa-youtube text-warning"></i>
+          <i class="fab fa-whatsapp-square  text-warning"></i>
+        </div>
+
+        <div class="bg-warning text-center py-3 infonum">
+          PURCHASE NOW
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Header end -->
+
+   <!-- banner start  -->
+   <section class="banner banner-pos">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- The slideshow -->
+      <div class="carousel-inner ">
+        <div class="carousel-item active banner-img">
+          <img src="./images_all/1.webp" alt="Los Angeles" width="100%" height="500px">
+        </div>
+        <div class="carousel-item banner-img">
+          <img src="./images_all/2.webp" alt="Chicago" width="100%" height="500px">
+        </div>
+        <div class="carousel-caption d-none d-md-block banner-text text-dark" style="position: absolute; left: 150px;">
+          <h1 >NEW FASHION</h1>
+          <h1>COLLECTION</h1>
+          <button class="btn banner-text-button px-3"> VIEW</button>
+          <button class="btn px-3 "> SHOP NOW</button>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+   
+  </section>
+  <!-- banner end  -->
+  <!-- category stat  -->
+  <section class="container mt-5">
+   
+
+  <div class="row" id="row1"> 
+    
+  <!-- <div class="col-md-4 ">
+    <div class=" card  cat-img p-4 shadow shadow rounded">
+      <a href="#">
+        <img class="card-img-top" style="width:100% ; height:250px" src="./images_all/logo.webp">
+      </a>
+      <div class="card-body text-center">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <h3 >$200</h3>
+        <div>
+          <i class="fa-regular fa-heart fa-2x "></i>
+          <i class="far fa-eye  fa-2x mx-5"></i>
+          <i class="fas fa-shopping-cart fa-2x"></i>
+
+        </div>
+
+      </div>
+    </div>  
+  </div> -->
+  
+  </div>
+  
+  </section>
+    <!-- category end  -->
+
+
+    <!-- arrival_section start -->
+    <!-- <section class="arrival_section container-fluid  mt-5 px-0">
+     <div  class="arrival_img">
+      <div class=" arrival_text row">
+        <div class="col-md-6 ml-auto .flex-column .d-flex  align-items-start">
+          <h2>#New Arrivals</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit commodi autem eos possimus unde molestias atque ea obcaecati eligendi aut praesentium, perferendis nemo quibusdam earum necessitatibus incidunt! Suscipit a sit delectus ipsa, dicta corporis porro magni minima tempore magnam sed accusamus debitis ad provident maxime aspernatur ex cum facere. Rerum!</p>
+          <button>Shop Now</button>
+        </div>
+       
+      </div>
+     </div>
+
+    </section> -->
+   <!--  arrival_section end  -->
+    <!-- footer stat -->
+    <footer class="container-fluid footer py-5  ">
+
+      
+
+<div class="row">
+<div class="col-sm-1 "></div>
+<div class="col-sm-3 text-white bg-warning my-5  ">
+  <img class= " p-2 " src="./images_all/logo.webp">
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima animi enim perspiciatis tempore neque maiores dicta quibusdam itaque ab fuga.</p>
+</div>
+
+<div class="col-sm-2 my-5 px-4">
+  <h4 class="text-warning">CONTACT----</h4>
+  <ul class="text-white footer-service p-0">
+    <li><i class="fas fa-map-marker-alt mx-1"></i>123 Street, New York, USA</li>
+    <li><i class="fas fa-phone-alt mx-1"></i>+012 345 67890</li>
+    <li><i class="fas fa-envelope-square mx-1"></i>info@example.com</li>
+    
+  
+  </ul>
+</div>
+<div class="col-sm-2 my-5 px-4">
+  <h4 class="text-warning">COMPANY----</h4>
+  <ul class="text-white footer-service p-0">
+    <li><i class="fas fa-chevron-right mx-1"></i>About Us</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>Contact Us</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>Privacy Policy</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>Terms & Conditon</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>Support</li>
+  
+  </ul>
+</div>
+
+<div class="col-sm-3 my-5 px-4">
+  <h4 class="text-warning">SERVICE----</h4>
+  <ul class="text-white footer-service p-0">
+    <li><i class="fas fa-chevron-right mx-1"></i>Food & Restaurant</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>Spa & Fitness</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>Sports & Gaming</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>Event & Party</li>
+    <li><i class="fas fa-chevron-right mx-1"></i>GYM & Yoga</li>
+  
+  </ul>
+</div>
+
+
+</div>
+<div class="col-sm-1 "></div>
+    </footer>
+   
+    <!-- footer end -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+var producthtml='';
+        var abc;
+        function mydata(){
+            var dataget = localStorage.getItem("dataAll")
+           
+            if(dataget!="undefined" && dataget!="" && dataget!=null){
+                var dataAllnew = JSON.parse(dataget);
+                display(dataAllnew);
+                demo12(dataAllnew);
+                // console.log(dataAllnew);
+            }else{
+
+            fetch("https://fakestoreapi.com/products")
+            .then (function (value){
+                return value.json();
+              
+            })
+            .then (function (response){
+                        abc=response;
+                        console.log( typeof abc);
+                       
+                        var data = JSON.stringify(abc);
+                        console.log(typeof data);
+
+                        localStorage.setItem("dataAll", data );
+                    
+                        
+                    display(abc)
+                    demo12(abc);
+                    console.log(abc);
+                });
+            }
+        }
+
+        function display(data){
+                  if(data.length > 0){
+
+                 data.forEach(element => {
+                     
+                    var str=` <div class="col-md-4 py-4 ">
+    <div class=" card  cat-img p-4 shadow shadow rounded">
+      <a href="#">
+        <img  class="card-img-top" style="width:100% ; height:250px" src="${element.image}">
+      </a>
+      <div class="card-body text-center">
+        <h4 class="card-title">${element.title}</h4>
+        <p class="card-text" style="font-size:10px"></p>
+        <h3 ><i class="fa-solid fa-dollar-sign"></i>${element.price}</h3>
+        <div>
+          <i class="fa-regular fa-heart fa-2x "></i>
+          <i class="far fa-eye  fa-2x mx-5 " onclick="viewproduct(${element.id})"></i>
+          <i class="fas fa-shopping-cart fa-2x"></i></a>
+         
+        </div>
+
+      </div>
+    </div>  
+  </div> `;
+  
+    producthtml+=str;
+    
+                 });
+            }
+            document.getElementById('row1').innerHTML=producthtml;
+        }
+
+
+        // new function for id
+      //   function demo12(data2){
+      //    var  prod='';
+      //     data2.forEach(iss => {
+      //       var st =`  <input value=${iss.id}>`
+      //       prod +=st;
+      //     });
+
+      //     document.getElementById("demo1").innerHTML= prod;
+      //     console.log(document.getElementById("demo1").innerHTML=prod);  
+      // }
+
+      function viewproduct(id){
+
+         if(id!="" && id!=undefined){
+              localStorage.setItem('clickproduct',id);
+              location.href='home2.html';
+         }
+
+      }
+      
+  </script>
+  
+
+</body>
+</html>
